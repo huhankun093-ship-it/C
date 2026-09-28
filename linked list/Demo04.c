@@ -52,7 +52,7 @@ int deleteNode(Node *L, int pos)
         printf("删除位置错误\n");
         return 0;
     }
-    Node *q = p->next;
+    Node *q = p->next;//声明一个 Node 指针 q，把 p->next（p 的下一个节点）赋给 q。
     p->next = q->next;
     free(q);
     return 1;
