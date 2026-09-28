@@ -1,0 +1,5 @@
+# 编译产物
+*.exe
+
+# CodeBuddy 工作记忆（个人数据，不提交）
+.codebuddy/
