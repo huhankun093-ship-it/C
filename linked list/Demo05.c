@@ -5,13 +5,13 @@ typedef int ElemType;
 
 typedef struct node
 {
-   ElemType data;
-   struct node *next;
+    ElemType data;
+    struct node *next;
 } Node;
 
 Node *initList()
 {
-    Node *head = (Node *)malloc(sizeof(Node));
+    Node *head = (Node *)malloc(sizeof(Node));////这一行是动态创建一个链表节点（头节点），并让 head 指针指向它。
     if (head == NULL)   // 检查分配是否失败
     {
         printf("内存分配失败\n");
@@ -24,7 +24,7 @@ Node *initList()
 
 int insertNode(Node *L, ElemType e, int pos)
 {
-    Node *p = L;
+    Node *p = L;//让指针从头节点出发
     int i = 0;
     while (p != NULL && i < pos)
     {
