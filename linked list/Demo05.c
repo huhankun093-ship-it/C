@@ -19,7 +19,7 @@ Node *initList()
     }
     head->data = 0;
     head->next = NULL;
-    return head;    
+    return head; //交出去地址   
 }
 
 int insertNode(Node *L, ElemType e, int pos)
